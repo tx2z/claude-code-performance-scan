@@ -1,0 +1,25 @@
+# Performance reports (generated output)
+performance-reports/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Node modules (if testing locally)
+node_modules/
+
+# Build artifacts
+dist/
+build/
