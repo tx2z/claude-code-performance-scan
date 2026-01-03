@@ -55,6 +55,27 @@ your-project/
 echo "performance-reports/" >> .gitignore
 ```
 
+## Optional: Optimize for Your Tech Stack
+
+After installation, you can optimize the performance scanner for your specific codebase. This improves detection accuracy by focusing on performance patterns relevant to your frameworks.
+
+Run this prompt in Claude Code:
+
+```
+I just installed the performance-scan command in .claude/. Please:
+
+1. Analyze my codebase to detect my tech stack (frontend framework, backend framework, database, build tools)
+2. Read the command files in .claude/commands/performance-scan.md and .claude/performance/agents/
+3. Optimize each performance agent by:
+   - Removing checks for technologies I don't use
+   - Adding performance patterns specific to my frameworks (React re-renders, Django ORM, etc.)
+   - Configuring database optimization checks for my ORM
+   - Adjusting bundle analysis based on my build tool (Webpack/Vite/esbuild)
+4. Keep the agent structure, performance categories, and output format unchanged
+
+Show me what you'll change before applying.
+```
+
 ## Usage
 
 In Claude Code, run the performance scan command:
